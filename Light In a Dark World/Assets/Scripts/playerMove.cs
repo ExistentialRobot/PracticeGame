@@ -24,30 +24,35 @@ public class playerMove : MonoBehaviour
         {
             jumpVelocity = Input.GetAxis("Vertical") * speed;
             anim.SetFloat("InputH", 0f);
-            if (Input.GetKey(KeyCode.D))
+    
+        }
+    }
+    public void Right()
+    {
+            player.transform.position += Vector3.right * speed * Time.deltaTime;
+            if (anim.GetBool("Grounded") == true)
             {
-                player.transform.position += Vector3.right * speed * Time.deltaTime;
-                if (anim.GetBool("Grounded") == true)
-                {
-                    anim.Play("Walk_R");
-                    anim.SetFloat("InputH", 1);
-                }
+                anim.Play("Walk_R");
+                anim.SetFloat("InputH", 1);
             }
-            if (Input.GetKey(KeyCode.A))
+
+    }
+    public void Left()
+    {
+            player.transform.position += Vector3.left * speed * Time.deltaTime;
+            if (anim.GetBool("Grounded") == true)
             {
-                player.transform.position += Vector3.left * speed * Time.deltaTime;
-                if (anim.GetBool("Grounded") == true)
-                {
-                    anim.Play("Walk_L");
-                    anim.SetFloat("InputH", -1);
-                }
+                anim.Play("Walk_L");
+                anim.SetFloat("InputH", -1);
             }
-            if (Input.GetKeyDown(KeyCode.Space) && grounded == true)
-            {
-                player.GetComponent<Rigidbody2D>().AddForce(jumpHeight, ForceMode2D.Impulse);
-                anim.SetBool("Grounded", false);
-                grounded = false;
-            }
+    }
+    public void Jump()
+    {
+        if (grounded == true)
+        {
+            player.GetComponent<Rigidbody2D>().AddForce(jumpHeight, ForceMode2D.Impulse);
+            anim.SetBool("Grounded", false);
+            grounded = false;
         }
     }
 }
