@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Light In a Dark World", "Light In a Dark World.csproj", "{29CAB95F-2E07-1225-4BF9-2496D14FDA84}"
 EndProject
 Global
