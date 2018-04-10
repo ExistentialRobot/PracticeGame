@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Coin
+  - Checkpoint
+  - Boundary
+  - Feet
+  - Moving Platform
+  - Ground
+  - AcidPool
+  - BounceShroom
+  - Monster
+  - Blast
+  - Blank Parent
+  - Player Limits
+  - Reset Zone
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - World
+  - Interactable
+  - Player
+  - Reset Zone
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Interactable
+    uniqueID: 2644040577
+    locked: 0
+  - name: World
+    uniqueID: 945524229
+    locked: 0
+  - name: OverWorld
+    uniqueID: 2504901387
+    locked: 0
+  - name: Player
+    uniqueID: 3720311093
+    locked: 0
+  - name: Front
+    uniqueID: 2266173551
+    locked: 0
+  - name: Absolute Front
+    uniqueID: 596169759
+    locked: 0
+  - name: Mega Front
+    uniqueID: 1972017675
+    locked: 0
